@@ -20,8 +20,7 @@ class Mailboxer::InstallGenerator < Rails::Generators::Base #:nodoc:
     if Rails.version < "3.1"
       migrations = [
         %w[20110511145103_create_mailboxer.rb create_mailboxer.rb],
-        %w[20131206080416_add_conversation_optout.rb add_conversation_optout.rb],
-        %w[20131206080417_add_missing_indices.rb add_missing_indices.rb]
+        %w[20131206080416_add_conversation_optout.rb add_conversation_optout.rb]
       ],
       migrations.each do |migration|
         migration_template "../../../../db/migrate/" + migration[0], "db/migrate/" + migration[1]
