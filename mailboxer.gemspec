@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   # Gem dependencies
   #
   # SQL foreign keys
-  s.add_runtime_dependency('foreigner', '>= 0.9.1')
+  s.add_runtime_dependency('schema_plus', '>= 1.5.3')
 
   # Development Gem dependencies
   s.add_runtime_dependency('rails', '>= 3.2.0')
